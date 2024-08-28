@@ -1,6 +1,6 @@
-server:
-  port: 3010
 spring:
+  main:
+    web-application-type: servlet
   datasource:
     username: root
     password: LkUlQWU7xk+myeIIFeuHuGntc3bQa0/fXzLVvmwX5JMc+bTPkNXTE0XaofA0TPgFg8mefuw4LpCQVKgXuYFv8w==

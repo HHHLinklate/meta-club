@@ -8,7 +8,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-08-27T00:40:45+0800",
+    date = "2024-08-27T01:04:13+0800",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 1.8.0_352 (Azul Systems, Inc.)"
 )
 public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConverter {
