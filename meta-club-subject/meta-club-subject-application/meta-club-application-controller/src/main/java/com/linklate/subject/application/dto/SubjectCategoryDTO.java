@@ -1,4 +1,4 @@
-package com.linklate.subject.application.controller.dto;
+package com.linklate.subject.application.dto;
 
 import lombok.Data;
 

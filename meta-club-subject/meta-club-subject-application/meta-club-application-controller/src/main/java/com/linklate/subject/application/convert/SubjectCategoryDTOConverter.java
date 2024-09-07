@@ -1,7 +1,7 @@
-package com.linklate.subject.application.controller.convert;
+package com.linklate.subject.application.convert;
 
 
-import com.linklate.subject.application.controller.dto.SubjectCategoryDTO;
+import com.linklate.subject.application.dto.SubjectCategoryDTO;
 import com.linklate.subject.domain.entity.SubjectCategoryBO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
@@ -19,7 +19,7 @@ public interface SubjectCategoryDTOConverter {
 
     SubjectCategoryDTOConverter INSTANCE = Mappers.getMapper(SubjectCategoryDTOConverter.class);
 
-    List<SubjectCategoryDTO> convertBoToCategoryDTOList(List<SubjectCategoryBO> subjectCategoryDTO);
+    List<SubjectCategoryDTO> convertBoToCategoryDTOList(List<SubjectCategoryBO> subjectCategoryBO);
 
     SubjectCategoryBO convertDtoToCategoryBO(SubjectCategoryDTO subjectCategoryDTO);
 

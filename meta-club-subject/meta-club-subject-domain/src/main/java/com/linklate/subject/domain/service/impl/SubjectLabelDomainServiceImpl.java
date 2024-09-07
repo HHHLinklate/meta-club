@@ -4,20 +4,19 @@ import com.alibaba.fastjson.JSON;
 import com.linklate.subject.common.enums.IsDeletedFlagEnum;
 import com.linklate.subject.domain.convert.SubjectCategoryConverter;
 import com.linklate.subject.domain.entity.SubjectCategoryBO;
+import com.linklate.subject.domain.service.SubjectCategoryDomainService;
+import com.linklate.subject.domain.service.SubjectLabelDomainService;
 import com.linklate.subject.infra.basic.entity.SubjectCategory;
 import com.linklate.subject.infra.basic.service.SubjectCategoryService;
-import com.linklate.subject.domain.service.SubjectCategoryDomainService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
 
-import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
-
 @Slf4j
 @Service
-public class SubjectCategoryDomainServiceImpl implements SubjectCategoryDomainService {
+public class SubjectLabelDomainServiceImpl implements SubjectLabelDomainService {
     @Resource
     private SubjectCategoryService subjectCategoryService;
 
