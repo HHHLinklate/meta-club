@@ -8,20 +8,20 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-08-27T01:04:13+0800",
+    date = "2024-09-07T13:02:46+0800",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 1.8.0_352 (Azul Systems, Inc.)"
 )
 public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConverter {
 
     @Override
-    public List<SubjectCategoryDTO> convertBoToCategoryDTOList(List<SubjectCategoryBO> subjectCategoryDTO) {
-        if ( subjectCategoryDTO == null ) {
+    public List<SubjectCategoryDTO> convertBoToCategoryDTOList(List<SubjectCategoryBO> subjectCategoryBO) {
+        if ( subjectCategoryBO == null ) {
             return null;
         }
 
-        List<SubjectCategoryDTO> list = new ArrayList<SubjectCategoryDTO>( subjectCategoryDTO.size() );
-        for ( SubjectCategoryBO subjectCategoryBO : subjectCategoryDTO ) {
-            list.add( convertBoToCategoryDTO( subjectCategoryBO ) );
+        List<SubjectCategoryDTO> list = new ArrayList<SubjectCategoryDTO>( subjectCategoryBO.size() );
+        for ( SubjectCategoryBO subjectCategoryBO1 : subjectCategoryBO ) {
+            list.add( convertBoToCategoryDTO( subjectCategoryBO1 ) );
         }
 
         return list;
