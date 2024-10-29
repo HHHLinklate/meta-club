@@ -22,6 +22,8 @@ public class SubjectCategoryController {
     @Resource
     private SubjectCategoryDomainService subjectCategoryDomainService;
 
+
+
     /**
      * 新增分类
      *

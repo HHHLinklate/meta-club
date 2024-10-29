@@ -1,4 +1,4 @@
-package com.linklate.subject.infra;
+package com.linklate.subject;
 
 
 import org.mybatis.spring.annotation.MapperScan;
