@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.linklate.subject.common.enums.IsDeletedFlagEnum;
 import com.linklate.subject.domain.convert.SubjectCategoryConverter;
 import com.linklate.subject.domain.entity.SubjectCategoryBO;
+import com.linklate.subject.domain.entity.SubjectLabelBO;
 import com.linklate.subject.domain.service.SubjectCategoryDomainService;
 import com.linklate.subject.domain.service.SubjectLabelDomainService;
 import com.linklate.subject.infra.basic.entity.SubjectCategory;
@@ -12,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Collections;
 import java.util.List;
 
 @Slf4j
@@ -20,7 +22,7 @@ public class SubjectLabelDomainServiceImpl implements SubjectLabelDomainService 
     @Resource
     private SubjectCategoryService subjectCategoryService;
 
-    @Override
+    /*@Override
     public void add(SubjectCategoryBO subjectCategoryBO) {
         SubjectCategory subjectCategory = SubjectCategoryConverter.INSTANCE
                 .convertBoToCategory(subjectCategoryBO);
@@ -55,5 +57,25 @@ public class SubjectLabelDomainServiceImpl implements SubjectLabelDomainService 
                 .convertBoToCategory(subjectCategoryBO);
         subjectCategory.setIsDeleted(IsDeletedFlagEnum.DELETED.code);
         return subjectCategoryService.update(subjectCategory);
+    }*/
+
+    @Override
+    public Boolean add(SubjectLabelBO subjectLabelBO) {
+        return null;
+    }
+
+    @Override
+    public Boolean update(SubjectLabelBO subjectLabelBO) {
+        return null;
+    }
+
+    @Override
+    public Boolean delete(SubjectLabelBO subjectLabelBO) {
+        return null;
+    }
+
+    @Override
+    public List<SubjectLabelBO> queryLabelByCategoryId(SubjectLabelBO subjectLabelBO) {
+        return Collections.emptyList();
     }
 }

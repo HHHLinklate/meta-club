@@ -1,11 +1,11 @@
+server:
+  port: 3010
 spring:
-  main:
-    web-application-type: servlet
   datasource:
     username: root
-    password: LkUlQWU7xk+myeIIFeuHuGntc3bQa0/fXzLVvmwX5JMc+bTPkNXTE0XaofA0TPgFg8mefuw4LpCQVKgXuYFv8w==
+    password: TAM+6P1Wm/I5OnAfOpqaGCOlGTDSSIjjD8VhE05yrejkp+QJYJaQeNchdRiKTwjMmjSuH1JKqFjOS3oUQJol6A==
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://119.91.211.118:3306/meta-club?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://117.72.56.182:3306/meta-club?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 20
@@ -27,4 +27,4 @@ spring:
           enabled: true
         config:
           enabled: true
-publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIGxM+ioUmSyDpXGCeO3MTQOkkYwZgsaRV3ZQ1s9KorFEjZX2TCPow2yWsZUKn6VJ7u3nebZ2laA1dr/VFod0GsCAwEAAQ==
+publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALXidhy+YMmSrV0DLCYmiCZiWukcVMl2yMNCXK4Pd+3NYmndopQq3rOKIdKMLg7l1pp408wGZkP1M/NpTQ8RPVUCAwEAAQ==
