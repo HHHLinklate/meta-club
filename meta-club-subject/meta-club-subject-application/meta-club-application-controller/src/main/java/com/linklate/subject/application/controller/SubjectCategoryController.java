@@ -32,6 +32,7 @@ public class SubjectCategoryController {
      */
     @PostMapping("/add")
     public Result<Boolean> add(@RequestBody SubjectCategoryDTO subjectCategoryDTO) {
+        // 需要加if判断，因为高并发时会先序列化再打日志，避免频繁序列化
         if (log.isInfoEnabled()) {
             log.info("SubjectCategoryController.add.dto:{}", JSON.toJSONString(subjectCategoryDTO));
         }
